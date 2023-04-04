@@ -1,0 +1,105 @@
+/* PC */
+@media (min-width: 64em) {
+    .hide-on-pc {
+        display: none;
+    }
+}
+
+/* Tablet & Mobile */
+@media (max-width: 63.9375em) {
+    .visual__img {
+        height: unset;
+    }
+
+    .footer {
+        padding: 0;
+    }
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+    html {
+        --header-height: 52px;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .header__nav {
+        display: block;
+        background-color: #97212d;
+        width: 100%;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: all 0.4s;
+        transition-delay: 0.1s;
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+    .toggle-btn {
+        display: flex;
+    }
+
+    .header__nav-item {
+        display: block;
+        padding: 20px;
+    }
+
+    .header__nav-item:first-child {
+        display: inline-block;
+    }
+
+    .header__nav-item:hover {
+        background-color: #fff;
+        color: var(--primary-color);
+    }
+
+    .header__nav-item::after {
+        display: none;
+    }
+
+    .move__checkmark {
+        --height: 16px;
+    }
+
+    .team {
+        padding: 0 24px;
+    }
+
+    .visual__text-role {
+        margin-bottom: 32px;
+    }
+
+    .visual__text {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+
+    .visual__img {
+        height: unset;
+    }
+
+    .legend {
+        width: 180px;
+        height: 180px;
+    }
+
+    .footer {
+        padding: 0 40px;
+    }
+
+    .footer__img {
+        width: 75%;
+    }
+
+    .modal__info {
+        right: 12px;
+    }
+
+    .modal__info {
+        border-radius: 10px;
+        width: 100%;
+    }
+}

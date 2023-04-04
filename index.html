@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="/assets/css/grid.css" />
+        <link rel="stylesheet" href="/assets/css/base.css" />
+        <link rel="stylesheet" href="/assets/css/main.css" />
+        <link rel="stylesheet" href="/assets/css/responsive.css" />
+        <!-- <link rel="stylesheet" href="/assets/font/fontawesome-free-6.2.1-web/css/all.min.css" /> -->
+        <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+        <script src="https://kit.fontawesome.com/1a4d7b41f5.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__content">
+                <div
+                    class="header__logo"
+                    onclick="document.querySelector('.slider-wrapper').scrollIntoView({behavior: 'smooth'})"
+                >
+                    <img src="/assets/img/logo.png" alt="logo" class="header__logo-img" />
+                </div>
+                <div class="header__actions">
+                    <input type="checkbox" id="nav__checkbox" />
+                    <ul class="header__nav">
+                        <label
+                            for="nav__checkbox"
+                            class="header__nav-item line line--under"
+                            onclick="document.querySelector('.slider-wrapper').scrollIntoView({behavior: 'smooth'})"
+                        >
+                            MY UNITED
+                        </label>
+                        <label
+                            for="nav__checkbox"
+                            class="header__nav-item line line--under"
+                            onclick="document.querySelector('.first-team-section').scrollIntoView({behavior: 'smooth'})"
+                        >
+                            FIRST TEAM
+                        </label>
+                        <label
+                            for="nav__checkbox"
+                            class="header__nav-item line line--under"
+                            onclick="document.querySelector('.manager-section').scrollIntoView({behavior: 'smooth'})"
+                        >
+                            MANAGER
+                        </label>
+                        <label
+                            for="nav__checkbox"
+                            class="header__nav-item line line--under"
+                            onclick="document.querySelector('.manager-section').scrollIntoView({behavior: 'smooth'})"
+                        >
+                            LEGEND
+                        </label>
+                        <label
+                            for="nav__checkbox"
+                            class="header__nav-item line line--under hide-on-pc"
+                            onclick="dispatch('showModal',  'authen')"
+                        >
+                            LOGIN
+                        </label>
+                        <label for="nav__checkbox" class="header__nav-item line line--under hide-on-pc">SIGNUP</label>
+                    </ul>
+                    <label for="nav__checkbox" class="toggle-btn hide-on-pc">
+                        <span></span><span></span><span></span>
+                    </label>
+                    <div class="header__auth hide-on-mobile">
+                        <span class="header__auth-item" onclick="(dispatch('showModal',  'authen'))">LOGIN</span>
+                        <div class="separator"></div>
+                        <span class="header__auth-item">SIGN UP</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="slider-wrapper">
+            <div class="slider js-slider"></div>
+            <div class="slider__btn prev js-prev-btn">
+                <i class="fa-solid fa-chevron-left slider__btn-icon"></i>
+            </div>
+            <div class="slider__btn next js-next-btn">
+                <i class="fa-solid fa-chevron-right slider__btn-icon"></i>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="first-team-section">
+                <h2 class="content-section__title line line--under">FIRST TEAM</h2>
+                <div class="team grid wide">
+                    <div class="team__position">
+                        <div class="team__position-name row">
+                            <span class="col c-12">GOALKEEPER</span>
+                        </div>
+                        <div class="row">
+                            <div class="player-container col l-12 m-12 c-12">
+                                <div class="player">
+                                    <img src="/assets/img/profile_thumbnail_henderson.jpg" alt="" class="player__img" />
+                                    <div class="player__info">
+                                        <div class="player__number line line--under">26</div>
+                                        <h3 class="player__name">DEAN<br />HENDERSON</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team__position">
+                        <div class="team__position-name row">
+                            <span class="col c-12">DEFENDERS</span>
+                        </div>
+                        <div class="row">
+                            <div class="player-container col l-3 c-6">
+                                <div class="player">
+                                    <img src="/assets/img/bissaka.jpg" alt="" class="player__img" />
+                                    <div class="player__info">
+                                        <div class="player__number line line--under">29</div>
+                                        <h3 class="player__name">ARRON WAN-BISSAKA</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="player-container col l-3 c-6">
+                                <div class="player">
+                                    <img src="/assets/img/lindelof.jpg" alt="" class="player__img" />
+                                    <div class="player__info">
+                                        <div class="player__number line line--under">2</div>
+                                        <h3 class="player__name">VICTOR LINDELOF</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="player-container col l-3 c-6">
+                                <div class="player">
+                                    <img src="/assets/img/maguire.jpg" alt="" class="player__img" />
+                                    <div class="player__info">
+                                        <div class="player__number line line--under">5</div>
+                                        <h3 class="player__name">HARRY MAGUIRE</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="player-container col l-3 c-6">
+                                <div class="player">
+                                    <img src="/assets/img/shaw.jpg" alt="" class="player__img" />
+                                    <div class="player__info">
+                                        <div class="player__number line line--under">25</div>
+                                        <h3 class="player__name">LUKE SHAW</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team__position">
+                        <div class="team__position-name row">
+                            <span class="col c-12">MIDFIELDERS</span>
+                        </div>
+                        <div class="row">
+                            <div class="player-container col c-6">
+                                <div class="player">
+                                    <img src="/assets/img/mctom.jpg" alt="" class="player__img" />
+                                    <div class="player__info">
+                                        <div class="player__number line line--under">39</div>
+                                        <h3 class="player__name">SCOTT MCTOMINAY</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="player-container col c-6">
+                                <div class="player">
+                                    <img src="/assets/img/bruno.jpg" alt="" class="player__img" />
+                                    <div class="player__info">
+                                        <div class="player__number line line--under">18</div>
+                                        <h3 class="player__name">BRUNO FERNANDES</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="player-container col c-12">
+                                <div class="player">
+                                    <img src="/assets/img/paul.jpg" alt="" class="player__img" />
+                                    <div class="player__info">
+                                        <div class="player__number line line--under">6</div>
+                                        <h3 class="player__name">PAUL POGBA</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team__position">
+                        <div class="team__position-name row">
+                            <span class="col c-12">FORWARDS</span>
+                        </div>
+                        <div class="row">
+                            <div class="player-container col c-6">
+                                <div class="player">
+                                    <img src="/assets/img/sancho.jpg" alt="" class="player__img" />
+                                    <div class="player__info">
+                                        <div class="player__number line line--under">25</div>
+                                        <h3 class="player__name">JADON SANCHO</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="player-container col c-6">
+                                <div class="player">
+                                    <img src="/assets/img/cavani.jpg" alt="" class="player__img" />
+                                    <div class="player__info">
+                                        <div class="player__number line line--under">7</div>
+                                        <h3 class="player__name">EDISON CAVANI</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="player-container col c-12">
+                                <div class="player">
+                                    <img src="/assets/img/rash4.jpg" alt="" class="player__img" />
+                                    <div class="player__info">
+                                        <div class="player__number line line--under">10</div>
+                                        <h3 class="player__name">MARCUS RASHFORD</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="manager-section">
+                <div class="visual">
+                    <h2 class="content-section__title line line--under">MANAGER</h2>
+                    <div class="grid wide">
+                        <div class="row no-gutters">
+                            <div class="visual__text l-2-4 c-0">
+                                <div class="visual__text-role">OLE GUNNAR SOLSKJAER</div>
+                                <div class="visual__text-quote">
+                                    "BEING GIVEN THE OPPORTUNITY TO MOVE THE CLUB FORWARD WITH ALL ITS POTENTIAL IS
+                                    FANTASTIC"
+                                </div>
+                            </div>
+                            <div class="visual__img"></div>
+                            <div class="visual__achievement l-2-4 c-4">
+                                <div class="visual__achievement-match">MATCHES:<br />131</div>
+                                <div class="visual__achievement-win">WINS:<br />73</div>
+                                <div class="visual__achievement-trophy">TROPHIES:<br />0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="info__bio">
+                        <h3 class="info__bio-title">BIOGRAPHY</h3>
+                        <p class="info__text">
+                            Former Manchester United and Norway striker Ole Gunnar Solskjaer returned to Old Trafford in
+                            a very different role on 19 December 2018, when he was appointed as the club's caretaker
+                            manager.
+                        </p>
+                    </div>
+                    <div class="grid">
+                        <div class="row">
+                            <div class="col l-4 c-6 info__position">
+                                <h3 class="info__title">POSITION</h3>
+                                <div class="info__text">Manager</div>
+                            </div>
+                            <div class="col l-4 c-6 info__country">
+                                <h3 class="info__title">COUNTRY</h3>
+                                <div class="info__text">
+                                    <img src="/assets/img/norway.png" alt="" class="info__country-img" />
+                                    <span>Norwegian</span>
+                                </div>
+                            </div>
+                            <div class="col l-4 c-6 info__birth">
+                                <h3 class="info__title">DATE OF BIRTH</h3>
+                                <div class="info__date">26 Feb 1973</div>
+                            </div>
+                            <div class="col l-4 c-6 info__join">
+                                <h3 class="info__title">JOINED</h3>
+                                <div class="info__date">19 Dec 2018</div>
+                            </div>
+                            <div class="col l-4 c-6 info__first-match">
+                                <h3 class="info__title">FIRST-MATCH</h3>
+                                <div class="info__date">22 Dec 2018</div>
+                                <div class="info__text info__text--small">V Cardiff City(A)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="legend-section">
+                <h2 class="content-section__title line line--under">LEGENDS</h2>
+                <div class="grid wide">
+                    <div class="row js-legend"></div>
+                </div>
+            </div>
+        </div>
+        <div class="grid footer">
+            <div class="row footer__logo-block">
+                <div class="col l-3 c-3 footer__logo">
+                    <img src="./assets/img/Adidas_Logo.svg.png" alt="" class="footer__img" />
+                </div>
+                <div class="col l-3 c-3 footer__logo">
+                    <img src="./assets/img/Chevrolet-logo.png" alt="" class="footer__img" />
+                </div>
+                <div class="col l-3 c-3 footer__logo">
+                    <img src="./assets/img/Kohler_logo.svg.png" alt="" class="footer__img" />
+                </div>
+                <div class="col l-3 c-3 footer__logo">
+                    <img src="./assets/img/Aon_Corporation_logo.svg.png" alt="" class="footer__img" />
+                </div>
+            </div>
+        </div>
+        <div class="js-modal"></div>
+
+        <script type="module" src="main.js"></script>
+    </body>
+</html>
