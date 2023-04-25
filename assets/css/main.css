@@ -351,7 +351,7 @@
 .visual__img {
     height: 500px;
     flex-grow: 1;
-    background: url('/assets/img/alex.png') top center / contain no-repeat;
+    background: url('./img/alex.png') top center / contain no-repeat;
 }
 
 .visual__achievement {

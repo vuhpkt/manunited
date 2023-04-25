@@ -1,7 +1,7 @@
 import { sliderImgs, legends } from './util/storage.js';
 import html from './core.js';
-import { attach } from '../store.js';
-import Modal from '../components/Modal.js';
+import { attach } from './store.js';
+import Modal from './components/Modal.js';
 
 const $ = document.querySelector.bind(document);
 
