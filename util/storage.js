@@ -1,8 +1,8 @@
 export const sliderImgs = [
-    '/assets/img/flag.jpg',
-    '/assets/img/qc.jpg',
-    '/assets/img/qc2.jpg',
-    '/assets/img/slide4.webp',
+    './assets/img/flag.jpg',
+    './assets/img/qc.jpg',
+    './assets/img/qc2.jpg',
+    './assets/img/slide4.webp',
 ];
 export const legends = [
     {
@@ -39,7 +39,7 @@ export const legends = [
     },
     {
         name: 'ryan giggs',
-        img: '/assets/img/legend_img_giggs.jpg',
+        img: './assets/img/legend_img_giggs.jpg',
         pngImg: '',
         nation: 'England',
         birth: '24/10/1985',
